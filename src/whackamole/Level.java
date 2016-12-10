@@ -3,11 +3,30 @@ package whackamole;
  * @author CodeDevils
  *
  */
-public class Level
-{
+public class Level{
 	private int levelNum;
 	private Hammer levelHammer;
 	private int moleSpeed, moleNum, maxMoles;
+	private Mole[] moles;
+	
+	Level(int num, int ms, int mn, int mm, boolean hasHammer){
+		this.levelNum = num;
+		
+		this.moleSpeed = ms;
+		this.moleNum = mn;
+		this.maxMoles = mm;
+		this.moles = new Mole[maxMoles];
+		for (int i = 0; i < moles.length; i++){
+			moles[i] = new Mole(moleSpeed);
+		}
+		if(hasHammer){
+			this.levelHammer = new Hammer(num * 2); //creates a new hammer with a power factor of level number * 2
+		}
+		else{
+			this.levelHammer = null;
+		}
+	}
+	
 	/**
 	 * @return the levelNum
 	 */

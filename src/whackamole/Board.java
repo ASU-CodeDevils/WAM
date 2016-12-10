@@ -4,8 +4,7 @@ package whackamole;
  *
  */
 
-public class Board
-{
+public class Board{
 	//private int hCoord, wCoord;
 	private char[][] boardArray;
 	

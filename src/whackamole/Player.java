@@ -10,11 +10,12 @@ public class Player{
 	
 	private String name;
 	protected Hammer[] hammers;
+	protected int score;
 	
 	Player(String playerName){
 		this.name = playerName;
+		this.score = 0;
 		this.hammers = new Hammer[5];
-		hammers[0] = new FistHammer();
 	}
 
 	/**
