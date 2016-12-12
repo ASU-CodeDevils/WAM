@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whackamole.WhackController">
+   <children>
+      <Group>
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="650.0">
+               <image>
+                  <Image url="@../../../../WAM%20moles/BKGRD.png" />
+               </image>
+            </ImageView>
+            <BorderPane prefHeight="450.0" prefWidth="650.0">
+               <top>
+                  <MenuBar BorderPane.alignment="CENTER">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                              <MenuItem mnemonicParsing="false" text="Save" />
+                          <MenuItem mnemonicParsing="false" text="New" />
+                              <MenuItem mnemonicParsing="false" text="Exit" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Mute" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                     <effect>
+                        <Lighting diffuseConstant="1.45" light="$null" specularConstant="0.2" specularExponent="20.47" surfaceScale="2.93">
+                           <bumpInput>
+                              <Glow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                     <BorderPane.margin>
+                        <Insets top="5.0" />
+                     </BorderPane.margin>
+                  </MenuBar>
+               </top>
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="WELCOME TO WAM!!" textFill="#c41ed3">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="35.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="start" mnemonicParsing="false" onAction="#startPress" prefHeight="45.0" prefWidth="100.0" text="Start">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </VBox.margin>
+                           <effect>
+                              <Glow level="0.12" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="resume" mnemonicParsing="false" onAction="#resumePress" prefHeight="45.0" prefWidth="100.0" text="Resume">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
