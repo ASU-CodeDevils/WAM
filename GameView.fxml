@@ -61,20 +61,7 @@
                         </ImageView>
                      </graphic>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" GridPane.rowIndex="2">
-                     <graphic>
-                        <ImageView fitHeight="117.0" fitWidth="159.0">
-                           <image>
-                              <Image url="@../../../../WAM%20moles/leftMole.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <font>
-                        <Font size="1.0" />
-                     </font>
-                     <GridPane.margin>
-                        <Insets right="15.0" top="20.0" />
-                     </GridPane.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" GridPane.rowIndex="2" />
                   <RadioButton mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <graphic>
                         <ImageView fitHeight="133.0" fitWidth="200.0">
@@ -82,10 +69,7 @@
                               <Image url="@../../../../WAM%20moles/rightMole.png" />
                            </image>
                         </ImageView>
-                     </graphic>
-                     <font>
-                        <Font size="1.0" />
-                     </font></RadioButton>
+                     </graphic></RadioButton>
                   <RadioButton mnemonicParsing="false" prefHeight="123.0" prefWidth="136.0" GridPane.columnIndex="2">
                      <font>
                         <Font size="1.0" />
@@ -104,20 +88,7 @@
                         </ImageView>
                      </graphic></RadioButton>
                   <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                     <graphic>
-                        <ImageView fitHeight="116.0" fitWidth="119.0">
-                           <image>
-                              <Image url="@../../../../WAM%20moles/leftMole.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <font>
-                        <Font size="1.0" />
-                     </font>
-                     <GridPane.margin>
-                        <Insets left="45.0" top="10.0" />
-                     </GridPane.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                   <RadioButton mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <font>
                         <Font size="1.0" />
@@ -137,7 +108,7 @@
                         <Font size="1.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="173.0" fitWidth="218.0">
+                        <ImageView fitHeight="150.0" fitWidth="191.0">
                            <image>
                               <Image url="@../../../../WAM%20moles/rightMole.png" />
                            </image>
@@ -147,7 +118,7 @@
                         <Insets />
                      </opaqueInsets>
                      <GridPane.margin>
-                        <Insets bottom="30.0" left="50.0" top="20.0" />
+                        <Insets left="45.0" top="20.0" />
                      </GridPane.margin>
                   </RadioButton>
                   <RadioButton mnemonicParsing="false" GridPane.columnIndex="3">
